@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F974915321BDC36F0032B469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974915221BDC36F0032B469 /* AppDelegate.swift */; };
+		F974915521BDC36F0032B469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974915421BDC36F0032B469 /* ViewController.swift */; };
+		F974915821BDC36F0032B469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F974915621BDC36F0032B469 /* Main.storyboard */; };
+		F974915A21BDC38C0032B469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F974915921BDC38C0032B469 /* Assets.xcassets */; };
+		F974915D21BDC38C0032B469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F974915B21BDC38C0032B469 /* LaunchScreen.storyboard */; };
+		F974916821BDC3900032B469 /* SmartMeterReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974916721BDC3900032B469 /* SmartMeterReadingTests.swift */; };
+		F974917321BDC3900032B469 /* SmartMeterReadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974917221BDC3900032B469 /* SmartMeterReadingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F974916421BDC3900032B469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F974914721BDC36E0032B469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F974914E21BDC36F0032B469;
+			remoteInfo = SmartMeterReading;
+		};
+		F974916F21BDC3900032B469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F974914721BDC36E0032B469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F974914E21BDC36F0032B469;
+			remoteInfo = SmartMeterReading;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F974914F21BDC36F0032B469 /* SmartMeterReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMeterReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F974915221BDC36F0032B469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F974915421BDC36F0032B469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F974915721BDC36F0032B469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F974915921BDC38C0032B469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F974915C21BDC38C0032B469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F974915E21BDC38C0032B469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F974916321BDC3900032B469 /* SmartMeterReadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMeterReadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F974916721BDC3900032B469 /* SmartMeterReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMeterReadingTests.swift; sourceTree = "<group>"; };
+		F974916921BDC3900032B469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F974916E21BDC3900032B469 /* SmartMeterReadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMeterReadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F974917221BDC3900032B469 /* SmartMeterReadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMeterReadingUITests.swift; sourceTree = "<group>"; };
+		F974917421BDC3900032B469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F974914C21BDC36F0032B469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F974916021BDC3900032B469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F974916B21BDC3900032B469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F974914621BDC36E0032B469 = {
+			isa = PBXGroup;
+			children = (
+				F974915121BDC36F0032B469 /* SmartMeterReading */,
+				F974916621BDC3900032B469 /* SmartMeterReadingTests */,
+				F974917121BDC3900032B469 /* SmartMeterReadingUITests */,
+				F974915021BDC36F0032B469 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F974915021BDC36F0032B469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F974914F21BDC36F0032B469 /* SmartMeterReading.app */,
+				F974916321BDC3900032B469 /* SmartMeterReadingTests.xctest */,
+				F974916E21BDC3900032B469 /* SmartMeterReadingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F974915121BDC36F0032B469 /* SmartMeterReading */ = {
+			isa = PBXGroup;
+			children = (
+				F974915221BDC36F0032B469 /* AppDelegate.swift */,
+				F974915421BDC36F0032B469 /* ViewController.swift */,
+				F974915621BDC36F0032B469 /* Main.storyboard */,
+				F974915921BDC38C0032B469 /* Assets.xcassets */,
+				F974915B21BDC38C0032B469 /* LaunchScreen.storyboard */,
+				F974915E21BDC38C0032B469 /* Info.plist */,
+			);
+			path = SmartMeterReading;
+			sourceTree = "<group>";
+		};
+		F974916621BDC3900032B469 /* SmartMeterReadingTests */ = {
+			isa = PBXGroup;
+			children = (
+				F974916721BDC3900032B469 /* SmartMeterReadingTests.swift */,
+				F974916921BDC3900032B469 /* Info.plist */,
+			);
+			path = SmartMeterReadingTests;
+			sourceTree = "<group>";
+		};
+		F974917121BDC3900032B469 /* SmartMeterReadingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F974917221BDC3900032B469 /* SmartMeterReadingUITests.swift */,
+				F974917421BDC3900032B469 /* Info.plist */,
+			);
+			path = SmartMeterReadingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F974914E21BDC36F0032B469 /* SmartMeterReading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F974917721BDC3900032B469 /* Build configuration list for PBXNativeTarget "SmartMeterReading" */;
+			buildPhases = (
+				F974914B21BDC36F0032B469 /* Sources */,
+				F974914C21BDC36F0032B469 /* Frameworks */,
+				F974914D21BDC36F0032B469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMeterReading;
+			productName = SmartMeterReading;
+			productReference = F974914F21BDC36F0032B469 /* SmartMeterReading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F974916221BDC3900032B469 /* SmartMeterReadingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F974917A21BDC3900032B469 /* Build configuration list for PBXNativeTarget "SmartMeterReadingTests" */;
+			buildPhases = (
+				F974915F21BDC3900032B469 /* Sources */,
+				F974916021BDC3900032B469 /* Frameworks */,
+				F974916121BDC3900032B469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F974916521BDC3900032B469 /* PBXTargetDependency */,
+			);
+			name = SmartMeterReadingTests;
+			productName = SmartMeterReadingTests;
+			productReference = F974916321BDC3900032B469 /* SmartMeterReadingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F974916D21BDC3900032B469 /* SmartMeterReadingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F974917D21BDC3900032B469 /* Build configuration list for PBXNativeTarget "SmartMeterReadingUITests" */;
+			buildPhases = (
+				F974916A21BDC3900032B469 /* Sources */,
+				F974916B21BDC3900032B469 /* Frameworks */,
+				F974916C21BDC3900032B469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F974917021BDC3900032B469 /* PBXTargetDependency */,
+			);
+			name = SmartMeterReadingUITests;
+			productName = SmartMeterReadingUITests;
+			productReference = F974916E21BDC3900032B469 /* SmartMeterReadingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F974914721BDC36E0032B469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Prajakta Kulkarni";
+				TargetAttributes = {
+					F974914E21BDC36F0032B469 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F974916221BDC3900032B469 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F974914E21BDC36F0032B469;
+					};
+					F974916D21BDC3900032B469 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F974914E21BDC36F0032B469;
+					};
+				};
+			};
+			buildConfigurationList = F974914A21BDC36E0032B469 /* Build configuration list for PBXProject "SmartMeterReading" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F974914621BDC36E0032B469;
+			productRefGroup = F974915021BDC36F0032B469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F974914E21BDC36F0032B469 /* SmartMeterReading */,
+				F974916221BDC3900032B469 /* SmartMeterReadingTests */,
+				F974916D21BDC3900032B469 /* SmartMeterReadingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F974914D21BDC36F0032B469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F974915D21BDC38C0032B469 /* LaunchScreen.storyboard in Resources */,
+				F974915A21BDC38C0032B469 /* Assets.xcassets in Resources */,
+				F974915821BDC36F0032B469 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F974916121BDC3900032B469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F974916C21BDC3900032B469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F974914B21BDC36F0032B469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F974915521BDC36F0032B469 /* ViewController.swift in Sources */,
+				F974915321BDC36F0032B469 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F974915F21BDC3900032B469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F974916821BDC3900032B469 /* SmartMeterReadingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F974916A21BDC3900032B469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F974917321BDC3900032B469 /* SmartMeterReadingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F974916521BDC3900032B469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F974914E21BDC36F0032B469 /* SmartMeterReading */;
+			targetProxy = F974916421BDC3900032B469 /* PBXContainerItemProxy */;
+		};
+		F974917021BDC3900032B469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F974914E21BDC36F0032B469 /* SmartMeterReading */;
+			targetProxy = F974916F21BDC3900032B469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F974915621BDC36F0032B469 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F974915721BDC36F0032B469 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F974915B21BDC38C0032B469 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F974915C21BDC38C0032B469 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F974917521BDC3900032B469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F974917621BDC3900032B469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F974917821BDC3900032B469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC44Z6PNA;
+				INFOPLIST_FILE = SmartMeterReading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.SmartMeterReading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F974917921BDC3900032B469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC44Z6PNA;
+				INFOPLIST_FILE = SmartMeterReading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.SmartMeterReading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F974917B21BDC3900032B469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC44Z6PNA;
+				INFOPLIST_FILE = SmartMeterReadingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.SmartMeterReadingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMeterReading.app/SmartMeterReading";
+			};
+			name = Debug;
+		};
+		F974917C21BDC3900032B469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC44Z6PNA;
+				INFOPLIST_FILE = SmartMeterReadingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.SmartMeterReadingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMeterReading.app/SmartMeterReading";
+			};
+			name = Release;
+		};
+		F974917E21BDC3900032B469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC44Z6PNA;
+				INFOPLIST_FILE = SmartMeterReadingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.SmartMeterReadingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMeterReading;
+			};
+			name = Debug;
+		};
+		F974917F21BDC3900032B469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC44Z6PNA;
+				INFOPLIST_FILE = SmartMeterReadingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.SmartMeterReadingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMeterReading;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F974914A21BDC36E0032B469 /* Build configuration list for PBXProject "SmartMeterReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F974917521BDC3900032B469 /* Debug */,
+				F974917621BDC3900032B469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F974917721BDC3900032B469 /* Build configuration list for PBXNativeTarget "SmartMeterReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F974917821BDC3900032B469 /* Debug */,
+				F974917921BDC3900032B469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F974917A21BDC3900032B469 /* Build configuration list for PBXNativeTarget "SmartMeterReadingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F974917B21BDC3900032B469 /* Debug */,
+				F974917C21BDC3900032B469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F974917D21BDC3900032B469 /* Build configuration list for PBXNativeTarget "SmartMeterReadingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F974917E21BDC3900032B469 /* Debug */,
+				F974917F21BDC3900032B469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F974914721BDC36E0032B469 /* Project object */;
+}
