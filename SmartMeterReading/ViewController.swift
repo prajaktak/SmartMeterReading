@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func GetMeterReading(_ sender: Any) {
         let historyPeriod:Date = Date.init(timeIntervalSinceNow: -60)
-        let urlString = String("http://\(IPAdreessTextField.text ?? " "):8123/api/history/period/\(historyPeriod)")
+        let urlString = String("http://\(IPAdreessTextField.text ?? " "):8123/api/history/period/\(historyPeriod)?filter_entity_id=sensor.gas_consumption")//?filter_entity_id=sensor.gas_consumption
         print(urlString)
         let rOriginal = urlString.range(of: " ")
         let newString = urlString.replacingCharacters(in: rOriginal!, with: "T")
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             else {
                     do {
                         print("Response :",response!)
-                        let responseData = try JSONSerialization.jsonObject(with: data!, options: []) as! [[String:Any]]
+                        let responseData = try JSONSerialization.jsonObject(with: data!, options: []) as! [[[String:Any]]]
                         print("API Data:",responseData )
                         self.showReading(responseData: responseData);
                 }catch{
@@ -55,13 +55,22 @@ class ViewController: UIViewController {
         }
         dataTask.resume()
         
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: false) { (timer) in
+            self.GetMeterReading(sender)
+        }
+        
         
     }
     
-    func showReading(responseData:[[String:Any]]) ->Void {
-//        responseData.contains { (<#[String : Any]#>) -> Bool in
-//            <#code#>
-//        }
+    func showReading(responseData:[[[String:Any]]]) ->Void {
+        let gasConsumptionData:Dictionary = responseData[0][0]
+        DispatchQueue.main.async {
+            self.PasswordTextField.resignFirstResponder()
+            self.IPAdreessTextField.resignFirstResponder()
+            self.readingLabel.text = gasConsumptionData["state"] as? String
+            self.readingView.isHidden =  false
+        }
+        print("reading:",gasConsumptionData["state"] ?? "could not get value")
     }
     
 }
