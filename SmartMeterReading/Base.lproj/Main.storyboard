@@ -35,12 +35,18 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PNB-Sj-OG5"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QL-bx-1xp">
                                 <rect key="frame" x="26" y="181" width="333" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jDe-Cw-9uh"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqA-BP-u1C">
                                 <rect key="frame" x="145" y="243" width="85" height="30"/>
@@ -103,6 +109,7 @@
                     <connections>
                         <outlet property="IPAdreessTextField" destination="bjU-3z-Nj6" id="jHV-57-35x"/>
                         <outlet property="PasswordTextField" destination="7QL-bx-1xp" id="o47-l5-dh2"/>
+                        <outlet property="getReadingButton" destination="FqA-BP-u1C" id="Mud-Wr-kJg"/>
                         <outlet property="readingLabel" destination="1c1-k6-Xf3" id="xpS-IN-0bH"/>
                         <outlet property="readingView" destination="WV5-Cr-ntX" id="W6b-qE-U26"/>
                     </connections>

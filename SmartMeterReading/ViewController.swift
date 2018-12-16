@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var readingLabel: UILabel!
     @IBOutlet weak var readingView: UIView!
+    @IBOutlet weak var getReadingButton: UIButton!
+    var readingArray = Array<Float>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func GetMeterReading(_ sender: Any) {
-        let historyPeriod:Date = Date.init(timeIntervalSinceNow: -60)
+        getReadingButton.isEnabled = false
+        let historyPeriod:Date = Date.init(timeIntervalSinceNow: -30)
         let urlString = String("http://\(IPAdreessTextField.text ?? " "):8123/api/history/period/\(historyPeriod)?filter_entity_id=sensor.gas_consumption")//?filter_entity_id=sensor.gas_consumption
         print(urlString)
         let rOriginal = urlString.range(of: " ")
@@ -55,7 +58,7 @@ class ViewController: UIViewController {
         }
         dataTask.resume()
         
-        Timer.scheduledTimer(withTimeInterval: 60, repeats: false) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { (timer) in
             self.GetMeterReading(sender)
         }
         
@@ -68,10 +71,28 @@ class ViewController: UIViewController {
             self.PasswordTextField.resignFirstResponder()
             self.IPAdreessTextField.resignFirstResponder()
             self.readingLabel.text = gasConsumptionData["state"] as? String
+            self.readingArray.append((self.readingLabel.text! as NSString).floatValue)
             self.readingView.isHidden =  false
+            self.blinkAnimation()
         }
-        print("reading:",gasConsumptionData["state"] ?? "could not get value")
+        print("reading:",readingArray )
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField){
+        getReadingButton.isEnabled = true
+    }
+    func blinkAnimation() -> Void {
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseOut, animations: {
+            
+            self.readingLabel.alpha = 0.0
+            
+        }, completion: nil)
+        UIView.animate(withDuration: 0.5, delay:0.5, options: .curveEaseOut, animations: {
+            
+            self.readingLabel.alpha = 1.0
+            
+        }, completion: nil)
+    }
+ 
 }
 
