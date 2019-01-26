@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts
 
 class ViewController: UIViewController {
 
@@ -15,10 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var readingLabel: UILabel!
     @IBOutlet weak var readingView: UIView!
     @IBOutlet weak var getReadingButton: UIButton!
-    var readingArray = Array<Float>()
+    @IBOutlet weak var graphView: BarChartView!
+    var time = Array<Double>()
+    var readingArray = Array<Double>()
+    var timeIndex:Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       //graphView.noDataText = "No data available"
+        timeIndex = 0
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -51,6 +57,10 @@ class ViewController: UIViewController {
                         let responseData = try JSONSerialization.jsonObject(with: data!, options: []) as! [[[String:Any]]]
                         print("API Data:",responseData )
                         self.showReading(responseData: responseData);
+                        if((self.time.count > 0) && (self.readingArray.count > 0))
+                        {
+                            self.setChart(dataPoints: self.time, values: self.readingArray)
+                        }
                 }catch{
                     print("couldn't convert json data")
                 }
@@ -61,8 +71,7 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { (timer) in
             self.GetMeterReading(sender)
         }
-        
-        
+
     }
     
     func showReading(responseData:[[[String:Any]]]) ->Void {
@@ -71,7 +80,9 @@ class ViewController: UIViewController {
             self.PasswordTextField.resignFirstResponder()
             self.IPAdreessTextField.resignFirstResponder()
             self.readingLabel.text = gasConsumptionData["state"] as? String
-            self.readingArray.append((self.readingLabel.text! as NSString).floatValue)
+            self.time.append(self.timeIndex)
+            self.timeIndex += 1
+            self.readingArray.append((self.readingLabel.text! as NSString).doubleValue)
             self.readingView.isHidden =  false
             self.blinkAnimation()
         }
@@ -93,6 +104,18 @@ class ViewController: UIViewController {
             
         }, completion: nil)
     }
- 
+    func setChart(dataPoints:[Double], values:[Double]){
+        var dataEntries: [BarChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            
+            let dataEntry = BarChartDataEntry(x: Double(i), y: values[i]) //BarChartDataEntry(value: values[i], xIndex: i)
+            dataEntries.append(dataEntry)
+        }
+        
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Consumed")//BarChartDataSet(yVals: dataEntries, label: "Units Sold")
+        let chartData = BarChartData(dataSet: chartDataSet)//BarChartData(xVals: time, dataSet: chartDataSet)
+        self.graphView.data = chartData
+    }
 }
 
