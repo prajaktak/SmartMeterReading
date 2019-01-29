@@ -83,20 +83,22 @@
                                     <constraint firstItem="9Yb-nr-Txd" firstAttribute="leading" secondItem="WV5-Cr-ntX" secondAttribute="leadingMargin" id="uxw-fd-fdF"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVA-XW-TrW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVA-XW-TrW" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="16" y="353" width="343" height="294"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WV5-Cr-ntX" secondAttribute="trailing" constant="21" id="0A2-K1-hMe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qVA-XW-TrW" secondAttribute="bottom" constant="20" id="298-QL-NtO"/>
                             <constraint firstItem="8tB-iB-Cve" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="550-hV-nAn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qVA-XW-TrW" secondAttribute="trailing" constant="16" id="AXP-kr-OZl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="naa-Kf-KW4" secondAttribute="trailing" symbolic="YES" id="BJ1-9v-fC8"/>
                             <constraint firstItem="FqA-BP-u1C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2r-tS-8Go"/>
                             <constraint firstItem="naa-Kf-KW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="FH8-8I-qFH"/>
                             <constraint firstItem="8tB-iB-Cve" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="NPx-Wp-lcP"/>
+                            <constraint firstItem="qVA-XW-TrW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="P8R-ye-fWU"/>
                             <constraint firstItem="bjU-3z-Nj6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="T8b-Oz-ccg"/>
                             <constraint firstItem="7QL-bx-1xp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="To4-ce-O6a"/>
                             <constraint firstItem="bjU-3z-Nj6" firstAttribute="top" secondItem="8tB-iB-Cve" secondAttribute="bottom" constant="8" id="Tvu-wa-YBV"/>
@@ -106,6 +108,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7QL-bx-1xp" secondAttribute="trailing" constant="16" id="hE3-Xf-irB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bjU-3z-Nj6" secondAttribute="trailing" constant="16" id="hPI-oQ-zr9"/>
                             <constraint firstItem="FqA-BP-u1C" firstAttribute="top" secondItem="7QL-bx-1xp" secondAttribute="bottom" constant="32" id="oCn-hu-6LF"/>
+                            <constraint firstItem="qVA-XW-TrW" firstAttribute="top" secondItem="WV5-Cr-ntX" secondAttribute="bottom" constant="8" id="sFK-8c-eAt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8tB-iB-Cve" secondAttribute="trailing" symbolic="YES" id="sdb-r0-zSR"/>
                             <constraint firstItem="naa-Kf-KW4" firstAttribute="top" secondItem="bjU-3z-Nj6" secondAttribute="bottom" constant="35" id="ufE-6e-MnS"/>
                         </constraints>
